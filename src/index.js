@@ -1,12 +1,6 @@
 const { GraphQLServer } = require('graphql-yoga');
 
-let links = [{
-  id: 'link-0',
-  url: 'www.howtographql.com',
-  description: 'Fullstack tutorial for GraphQL'
-}]
 // 1
-let idCount = links.length
 const resolvers = {
   Query: {
     info: () => `This is the API of a Hackernews Clone`,
